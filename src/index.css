@@ -32,6 +32,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html, body {width: auto!important; overflow-x: hidden!important} 
 body {
 	line-height: 1;
 	background-color: rgb(246, 245, 245);
