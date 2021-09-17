@@ -24,20 +24,24 @@
 .like-btn{
     border:none;
     background: none;
-    position: absolute;
-    transform: translate(1000%, -120%);
-    transition: all 0.2s;
+    position: relative;
+    left: 90%;
+    transition: all 0.3s;
 }
 .like-btn:hover{
-    color: red;
     cursor: pointer;
 }
 .like-btn-active{
     border:none;
     background: none;
-    position: absolute;
-    transform: translate(1000%, -120%);
+    position: relative;
+    left: 90%;
+    transform: scale(1.1);
+    transition: all .3s;
     color: red;
+}
+.like-btn-active:hover{
+    cursor: pointer;
 }
 
 /* Media Queries */
@@ -53,37 +57,14 @@
         margin-left: 4%;
     }
 }
-@media screen and (max-width: 375px) {
-    .my-container{
-        margin-left: 7%;
-    }
-    .like-btn{
-        transform: translate(900%, -120%);
-    }
-    .like-btn-active{
-        transform: translate(900%, -120%);
-    }
-}
 @media screen and (max-width: 320px) {
-    .my-container{
-        margin-left: 9%;
-        margin-top: 5%;
-    }
-    .like-btn{
-        transform: translate(800%, -120%);
-    }
-    .like-btn-active{
-        transform: translate(800%, -120%);
-    }
     .thumbnail > img {
         height: 250px;
     }
-}
-@media screen and (max-width: 280px) {
     .like-btn{
-        transform: translate(680%, -120%);
+        left: 85%;
     }
     .like-btn-active{
-        transform: translate(680%, -120%);
+        left: 85%;
     }
 }

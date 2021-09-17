@@ -14,7 +14,7 @@ const Pagination = ({ handlePageClick, pageCount }) => {
             marginPagesDisplayed={3}
             pageRangeDisplayed={4}
             onPageChange={handlePageClick}
-            containerClassName={'pagination justify-content-center page-container'}
+            containerClassName={'pagination justify-content-center pagination-sm page-container'}
             pageClassName={'page-item'}
             pageLinkClassName={'page-link'}
             previousClassName={'page-item'}

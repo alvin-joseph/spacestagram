@@ -70,3 +70,20 @@
         margin-bottom: 2%;
     }
 }
+@media screen and (max-width: 280px) {
+    .header{
+        margin-left: 2%;
+    }
+    .header-title{
+        font-size: 1rem;
+        margin: 14% 0 3%;
+    }
+    .header-subtitle{
+        font-size: .7rem;
+        margin-bottom: 6%;
+    }
+    .search-title{
+        font-size: .8rem;
+        margin-bottom: 2%;
+    }
+}

@@ -1,26 +1,19 @@
-import React, { useState } from 'react'
-import ClassNames from 'classnames'
+import React from 'react'
 import Loader from 'react-loader-spinner';
 
 import './Cards.css'
 
 const Cards = ({ photos, loading }) => {
-    const [liked, setLiked] = useState(false)
-    const [disliked, setDisliked] = useState(false)
-
-    const handleClick = () => {
-        if(!disliked) {
-            setLiked(!liked)
-        } else {
-            setLiked(true)
-            setDisliked(false)
-        }
+    const listenForLikes = () => {
+        const likes = document.querySelectorAll(".like-btn");
+        likes.forEach(like => {
+         like.addEventListener("click", (event) => {
+           event.target.classList.toggle("like-btn");
+           event.target.classList.toggle("like-btn-active");
+         })
+        })
     }
 
-    const classLikeButton = ClassNames({
-        "fas fa-heart fa-2x like-btn": true,
-        "fas fa-heart fa-2x like-btn-active": liked
-    });
     return (
         <div className="container my-container">
             <div className="row">
@@ -39,7 +32,7 @@ const Cards = ({ photos, loading }) => {
                                 <p>Launched from Earth - {photo.rover.launch_date}</p>
                                 <p>Landed on Mars - {photo.rover.landing_date}</p>
                                 <p>Earth Date Taken - {photo.earth_date}</p>
-                                <i onClick={handleClick} className={classLikeButton}/>
+                                <i onClick={listenForLikes} className={"fas fa-heart fa-2x like-btn"}/>
                             </div>
                         </div>
                 )
