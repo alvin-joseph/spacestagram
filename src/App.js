@@ -20,12 +20,12 @@ function App() {
       setLoading(true)
       const res = await axios
       .get(searchDate ? `${BASE_URL}?earth_date=${searchDate}&page=1&api_key=${API_KEY}`
-      : `${BASE_URL}?sol=1000&page=1&api_key=${API_KEY}`)
+      : `${BASE_URL}?sol=1001&page=1&api_key=${API_KEY}`)
       setPhotos(res.data.photos)
       // Calculate total number of photos from NASA rover API to calculate page count
       const totalRes = await axios
       .get(searchDate ? `${BASE_URL}?earth_date=${searchDate}&api_key=${API_KEY}`
-      : `${BASE_URL}?sol=1000&api_key=${API_KEY}`)
+      : `${BASE_URL}?sol=1001&api_key=${API_KEY}`)
       const total = totalRes.data.photos.length
       setPageCount(Math.ceil(total/25))
       setLoading(false)
@@ -37,7 +37,7 @@ function App() {
   const getNextPage = async (currentPage) => {
     const res = await axios
     .get(searchDate ? `${BASE_URL}?earth_date=${searchDate}&page=${currentPage}&api_key=${API_KEY}`
-    : `${BASE_URL}?sol=1000&page=${currentPage}&api_key=${API_KEY}`)
+    : `${BASE_URL}?sol=1001&page=${currentPage}&api_key=${API_KEY}`)
     const data = await res.data.photos;
     return data;
   }
