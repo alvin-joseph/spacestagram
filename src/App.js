@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
+import { Route } from 'react-router-dom'
 import axios from 'axios'
 
 import Navbar from './components/Navbar/Navbar'
 import Header from './components/Header/Header'
 import Pagination from './components/Pagination/Pagination'
 import Cards from './components/SpaceCard/Cards'
+import APOD from './components/APOD/APOD'
 
 const API_KEY = process.env.REACT_APP_API_KEY
 const BASE_URL = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos'
@@ -56,9 +58,12 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Header setSearchDate={setSearchDate}/>
-      <Cards photos={photos} loading={loading}/>
-      <Pagination handlePageClick={handlePageClick} pageCount={pageCount}/>
+      <Route exact path="/">
+        <Header setSearchDate={setSearchDate}/>
+        <Cards photos={photos} loading={loading}/>
+        <Pagination handlePageClick={handlePageClick} pageCount={pageCount}/>
+      </Route>
+      <Route exact path="/apod" component={APOD}/>
     </div>
   );
 }

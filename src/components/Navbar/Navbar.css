@@ -50,3 +50,17 @@
         right: 10%;
     }
 }
+@media screen and (max-width:320px){
+    .title {
+        left: -14%;
+    }
+}
+@media screen and (max-width:280px){
+    .title {
+        font-size: 1.2rem;
+        top: 30%;
+    }
+    .btn-link{
+        font-size: .8rem;
+    }
+}

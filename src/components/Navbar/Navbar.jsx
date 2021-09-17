@@ -15,12 +15,12 @@ const NavBar = () => {
                 Spacestagram
             </Link>
             {!clicked ? 
-            <Link to='/favorite-photos'>
-                <button className='btn-link' onClick={handleClick}>Favorite Photos</button>
+            <Link to='/apod'>
+                <button className='btn-link' onClick={handleClick}>APOD</button>
             </Link>
             :
             <Link to='/'>
-                <button className='btn-link' onClick={handleClick}>All Photos</button>
+                <button className='btn-link' onClick={handleClick}>Rover Images</button>
             </Link>}
         </nav>
     )
