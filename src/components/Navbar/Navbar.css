@@ -3,6 +3,7 @@
     height: 52px;
     width: 100%;
     position: fixed;
+    background-color: white;
 }
 .title{
     color: black;
@@ -15,8 +16,12 @@
     left: 5%;
     font-family: 'Oleo Script Swash Caps', cursive;
 }
+.title:hover{
+    color:black;
+}
 .btn-link{
     position: absolute;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     font-weight: 700;
@@ -27,6 +32,13 @@
     color: white;
     background-color: #0095f6;
     cursor: pointer;
+    transition: all 0.2s linear;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn-link:hover{
+    background-color: white;
+    color: #0095f6;
+    border: 1px solid #0095f6;
 }
 
 /* Media Queries */

@@ -1,0 +1,11 @@
+.page-container{
+    margin: 1.5% 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 414px) {
+    .page-container{
+        margin-left: 6%;
+    }
+}

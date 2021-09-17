@@ -1,0 +1,89 @@
+.spinner{
+    display: flex;
+    justify-content: center;
+}
+.my-col{
+    padding: 1%;
+    width: 400px;
+    margin-right: 1%;
+    margin-bottom: 2.6%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.thumbnail > img {
+    height: 350px;
+    width: 400px;
+}
+.thumbnail > p {
+    padding-top: 1.8%;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.row{
+    justify-content: space-around;
+}
+.like-btn{
+    border:none;
+    background: none;
+    position: absolute;
+    transform: translate(1000%, -120%);
+    transition: all 0.2s;
+}
+.like-btn:hover{
+    color: red;
+    cursor: pointer;
+}
+.like-btn-active{
+    border:none;
+    background: none;
+    position: absolute;
+    transform: translate(1000%, -120%);
+    color: red;
+}
+
+/* Media Queries */
+
+@media (max-width: 540px) and (min-height:720px) {
+    .my-container{
+        margin-left: 3.5%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .my-container{
+        margin-left: 4%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .my-container{
+        margin-left: 7%;
+    }
+    .like-btn{
+        transform: translate(900%, -120%);
+    }
+    .like-btn-active{
+        transform: translate(900%, -120%);
+    }
+}
+@media screen and (max-width: 320px) {
+    .my-container{
+        margin-left: 9%;
+        margin-top: 5%;
+    }
+    .like-btn{
+        transform: translate(800%, -120%);
+    }
+    .like-btn-active{
+        transform: translate(800%, -120%);
+    }
+    .thumbnail > img {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .like-btn{
+        transform: translate(680%, -120%);
+    }
+    .like-btn-active{
+        transform: translate(680%, -120%);
+    }
+}
