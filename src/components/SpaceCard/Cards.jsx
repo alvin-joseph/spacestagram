@@ -31,6 +31,7 @@ const Cards = ({ photos, loading }) => {
                             <div className="thumbnail">
                                 <p className="card-title">{photo.rover.name} Rover - {photo.camera.full_name}</p>
                                 <LazyLoadImage
+                                    className="rover-img"
                                     effect="blur"
                                     src={photo.img_src} 
                                     alt={photo.full_name} 

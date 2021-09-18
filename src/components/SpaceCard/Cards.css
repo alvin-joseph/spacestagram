@@ -9,7 +9,7 @@
     margin-bottom: 2.6%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.thumbnail > img {
+.rover-img {
     height: 350px;
     width: 400px;
 }
@@ -58,7 +58,7 @@
     }
 }
 @media screen and (max-width: 320px) {
-    .thumbnail > img {
+    .rover-img {
         height: 250px;
     }
     .like-btn{
