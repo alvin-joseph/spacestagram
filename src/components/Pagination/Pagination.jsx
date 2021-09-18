@@ -1,7 +1,7 @@
-import React from 'react'
-import ReactPaginate from 'react-paginate'
+import React from 'react';
+import ReactPaginate from 'react-paginate';
 
-import './Pagination.css'
+import './Pagination.css';
 
 const Pagination = ({ handlePageClick, pageCount }) => {
     return (

@@ -1,14 +1,14 @@
 import React from 'react';
-import './Header.css'
+import './Header.css';
 
 const Header = ({ setSearchDate }) => {
     const onChange = e => {
-        setSearchDate(e.target.value)
-    }
+        setSearchDate(e.target.value);
+    };
 
     const handleReset = e => {
-        setSearchDate("")
-    }
+        setSearchDate("");
+    };
 
     return (
         <div className="header">

@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-import './APOD.css'
+import './APOD.css';
 
-const API_KEY = process.env.REACT_APP_API_KEY
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const APOD = () => {
     const [image, setImage] = useState("");
-    const [linktype, setLinktype] = useState("")
+    const [linktype, setLinktype] = useState("");
 
     
     useEffect(() => {
@@ -22,7 +22,7 @@ const APOD = () => {
         .catch(err => {
             console.log(err);
         })
-    }, [])
+    }, []);
     
     
     return (

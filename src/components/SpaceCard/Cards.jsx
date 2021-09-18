@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import Loader from 'react-loader-spinner';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-import './Cards.css'
+import './Cards.css';
 
 const Cards = ({ photos, loading }) => {
     const listenForLikes = () => {
@@ -14,7 +14,7 @@ const Cards = ({ photos, loading }) => {
            event.target.classList.toggle("like-btn-active");
          })
         })
-    }
+    };
 
     return (
         <div className="container my-container">
