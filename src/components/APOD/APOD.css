@@ -12,6 +12,14 @@
     color:black;
     margin-bottom: 1%;
 }
+.img-container{
+    height: 50%;
+    width: 50%;
+}
+.img-container > img {
+    height: 100%;
+    width: 100%;
+}
 .img-description{
     width: 50%;
     text-align: center;
@@ -25,6 +33,12 @@
 }
 
 /* Media Queries */
+@media screen and (max-width: 1024px) {
+    .img-container{
+        height: 40%;
+        width: 70%;
+    }
+}
 @media screen and (max-width: 768px) {
     .video-responsive {
         width: 80%;
@@ -58,6 +72,9 @@
     }
     .apod-container > h1 {
         font-size: .8rem;
+    }
+    .img-container{
+        height: 30%;
     }
 }
 @media screen and (max-width: 320px) {

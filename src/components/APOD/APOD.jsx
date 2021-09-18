@@ -44,7 +44,7 @@ const APOD = () => {
                 )
                 :
                 (
-                    <div className="image">
+                    <div className="img-container">
                         <img src={image.url} alt={`${image.title}`}></img>
                     </div>
                 )
