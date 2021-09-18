@@ -17,7 +17,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [pageCount, setPageCount] = useState(0);
 
-  const solValue = 2000;
+  const solValue = 3240;
   
   useEffect(() => {
     const getPhotos = async () => {
